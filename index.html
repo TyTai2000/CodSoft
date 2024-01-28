@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taiwo Akingbesote </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="portfolio">
+
+        <header>
+            <h3>Hello, World.</h3>
+            <h3>I'm Taiwo Akingbesote.</h3>
+            <a href="education.html" class="more-btn">More About Me</a>
+        </header>
+
+        <!-- Container for the GIF -->
+        <div id="gifContainer"></div>
+
+        <footer>
+            <a href="https://github.com/TyTai2000" target="_blank">My Github</a>
+            <a href="https://www.linkedin.com/in/taiwo-akingbesote/" target="_blank">My Linkedin</a>
+            <a href="https://www.instagram.com/ty_akinss_?igsh=MXI1eTdoN2JvZTlieg%3D%3D&utm_source=qr" target="_blank">My Instagram</a>
+        </footer>
+    </div>
+
+    <script>
+        // JavaScript to add the GIF
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const gifContainer = document.getElementById('gifContainer');
+            const gif = document.createElement('img');
+            gif.src = 'https://media.giphy.com/media/VLqGlBC1BsPtev9RnJ/giphy.gif';
+            gif.alt = 'Animated Image Description'; // Replace with a descriptive alt text
+            gif.className = 'gifImage'; // Adding a class name
+            gifContainer.appendChild(gif);
+        });
+    </script>
+</body>
+</html>

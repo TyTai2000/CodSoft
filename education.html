@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taiwo Akingbesote - Education and Experience</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="education-experience-page">
+        <!-- Navigation at the top as part of the background -->
+        <div class="navigation top">
+            <a href="index.html" class="nav-btn">Home</a>
+        </div>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>EDUCATION</h2>
+            <p>Montclair State University (MSU), Montclair, NJ</p>
+            <p>Bachelor of Science in Mathematics; Minor in Computer Science</p>
+            <p>GPA: 3.62/4.0</p>
+            <p>Expected Graduation: May 2024</p>
+            <p>Relevant Coursework: Calculus 3, Linear Algebra, ODE, Data structures and Algorithms, Perturbation Theory, Probability, Python, Physics I&II & Mathematics Modeling.</p>
+            <p>Honors: Dean's List for multiple semesters, Audrey V Leaf Scholarship, Mathematics Ambassador.</p>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>EXPERIENCE</h2>
+            <h4>DATA GLACIERS</h4>
+            <p>Data Science Intern - unpaid, Remote, May 2023 - Aug 2023</p>
+            <ul>
+                <li>Engineered and deployed advanced machine learning models with Python, integrating Flask to design a user-centric web application on Heroku, which improved model accessibility and user interaction.</li>
+                <li>Spearheaded a cross-regional team of interns to design an ML forecasting model for a bank, in an aim to cut operational costs by 20%, enhancing customer behavior prediction accuracy by 25%.</li>
+            </ul>
+            <h4>MSU DEPARTMENT OF SCIENCE AND MATHEMATICS, Montclair, NJ</h4>
+            <p>Teacher's Assistant, Applied Pre-Calculus & Calculus I, Jan 2023 - Present</p>
+            <ul>
+                <li>Provide one-on-one and group instruction to 83 undergraduate students in pre-calculus concepts.</li>
+                <li>Create customized lesson plans and practice problems to improve student understanding.</li>
+                <li>Monitor and evaluate student progress and provide feedback to students and professors.</li>
+            </ul>
+        </section>
+
+        <!-- Navigation at the bottom as part of the background -->
+        <div class="navigation bottom">
+            <a href="projects.html" class="nav-btn">Projects</a>
+        </div>
+
+    </div>
+
+    <script>
+        function animate() {
+            const elem = document.getElementById("animateMe");
+            let pos = 0;
+            const id = setInterval(frame, 10);
+
+            function frame() {
+                if (pos == 350) {
+                    clearInterval(id);
+                } else {
+                    pos++;
+                    elem.style.left = pos + 'px';
+                }
+            }
+        }
+    </script>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

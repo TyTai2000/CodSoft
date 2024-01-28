@@ -1,0 +1,181 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+}
+
+
+/* Styles for the Portfolio Page */
+#portfolio {
+    min-height: 100%;
+    background: url('fut.jpg') no-repeat center center fixed; /* Adjust URL as needed */
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+#education-experience-page {
+    background: url('futss.jpg') no-repeat center center fixed;
+}
+
+header h1 {
+    font-size: 4em;
+    margin-bottom: 2em;
+    color: black;
+}
+
+header h3 {
+    font-size: 2em;
+    margin-bottom: 2em;
+    color: white;
+}
+
+/* More About Me Button */
+.more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.more-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: black;
+}
+
+/* GIF Image */
+.gifImage {
+    width: 200px;
+    height: auto;
+}
+
+/* Education and Experience Section Styles */
+section#education, section#experience {
+    flex-basis: 45%;
+    padding: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 2em;
+}
+
+}
+section#education ul, section#experience ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-family: 'Lucida Console', monospace;
+}
+
+/* Styles for the Projects Page */
+/* Styles for Projects Page */
+#projects-page {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    color: black;
+    background: url('white.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#projects-page section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    section#education, section#experience {
+        flex-basis: 100%;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    section#education li, section#experience li {
+        margin: 5px 0;
+    }
+
+    .nav-btn {
+        padding: 5px 10px;
+    }
+}
+
+/* Navigation Button Styles */
+.nav-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 0 solid white;
+    color: red;
+    background-color: black;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Fade-in Animation Styles */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+.project {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+    overflow: hidden;
+}
+.project-image {
+    width: 600px; /* Or the size you want */
+    height: 400px;
+    float: left; /* Aligns the image to the left */
+    margin-right: 20px; /* Adds some space between the image and the text */
+    border-radius: 4px; /* Optional: rounds the corners of the image */
+}
+
+.navigation {
+    text-align: center;
+    padding: 20px 0;
+}
