@@ -1,8 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taiwo Akingbesote - Education and Experience</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Additional styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .education-section, .experience-section {
+            margin-bottom: 20px;
+        }
+        .education-section h3, .experience-section h4 {
+            margin-top: 15px;
+        }
+        .navigation {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .nav-btn {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+        }
+        .nav-btn:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body>
     <div id="education-experience-page">
@@ -12,31 +41,52 @@
         </div>
 
         <!-- Education Section -->
-        <section id="education">
+        <section id="education" class="education-section">
             <h2>EDUCATION</h2>
-            <p>Montclair State University (MSU), Montclair, NJ</p>
-            <p>Bachelor of Science in Mathematics; Minor in Computer Science</p>
-            <p>GPA: 3.62/4.0</p>
-            <p>Expected Graduation: May 2024</p>
-            <p>Relevant Coursework: Calculus 3, Linear Algebra, ODE, Data structures and Algorithms, Perturbation Theory, Probability, Python, Physics I&II & Mathematics Modeling.</p>
-            <p>Honors: Dean's List for multiple semesters, Audrey V Leaf Scholarship, Mathematics Ambassador.</p>
+
+            <h3 style="color: #4CAF50;">Rutgers Business School, Newark, NJ</h3>
+            <p><strong>Degree:</strong> Master of Science (M.S.) in Quantitative Finance / Financial Mathematics</p>
+            <p><strong>Expected Graduation:</strong> December 2025</p>
+        
+            <h3 style="color: #2196F3;">Montclair State University, Montclair, NJ</h3>
+            <p><strong>Degree:</strong> Bachelor of Science (B.S.) in Mathematics with a Minor in Computer Science</p>
+            <p><strong>Graduation:</strong> Class of 2024</p>
+            <p><strong>Cumulative GPA:</strong> 3.68/4.0</p>
+            <p><strong>Major GPA:</strong> 3.8/4.0</p>
+            <p><strong>Relevant Coursework:</strong> Calculus 3, Linear Algebra, ODE, Data Structures and Algorithms, Perturbation Theory, Probability, Python, Physics I & II, Mathematics Modeling, Operations Research, Abstract Algebra.</p>
+            <p><strong>Honors & Awards:</strong></p>
+            <ul>
+                <li>Dean's List for multiple semesters</li>
+                <li>Audrey V. Leaf Scholarship</li>
+                <li>Mathematics Ambassador</li>
+            </ul>
         </section>
 
         <!-- Experience Section -->
-        <section id="experience">
+        <section id="experience" class="experience-section">
             <h2>EXPERIENCE</h2>
-            <h4>DATA GLACIERS</h4>
-            <p>Data Science Intern - unpaid, Remote, May 2023 - Aug 2023</p>
+
+            <h4>JOHNSON & JOHNSON</h4>
+            <p>Data Science & Data Engineering Intern – CBT TS Application Maintenance Team, Raritan, NJ, Aug 2024 – Present</p>
             <ul>
-                <li>Engineered and deployed advanced machine learning models with Python, integrating Flask to design a user-centric web application on Heroku, which improved model accessibility and user interaction.</li>
-                <li>Spearheaded a cross-regional team of interns to design an ML forecasting model for a bank, in an aim to cut operational costs by 20%, enhancing customer behavior prediction accuracy by 25%.</li>
+                <li>Automated error email processing using Azure Function and Power Automate, integrating a Python script, saving over $40,000 annually and thousands of manual hours.</li>
+                <li>Led the proof of concepts for the Mobius tool, improving forecasting accuracy by 62% across 90,000+ data points, enhancing financial decisions by 15% in eMarketplace, FP&A, and SUMMIT platforms.</li>
+                <li>Participated in strategic initiatives aimed at automating and enhancing application maintenance processes using Johnson & Johnson’s suite of automation tools, reducing error tickets by 10% monthly, leading to a 25% increase in system uptime and a significant boost in overall operational efficiency.</li>
+                <li>Integrated and automated business-critical systems including IRIS, MS Teams, and Slack, using API-driven approaches to streamline compliance management through the RISE initiative for Workday.</li>
             </ul>
-            <h4>MSU DEPARTMENT OF SCIENCE AND MATHEMATICS, Montclair, NJ</h4>
-            <p>Teacher's Assistant, Applied Pre-Calculus & Calculus I, Jan 2023 - Present</p>
+
+            <h4>GOLDMAN SACHS</h4>
+            <p>Virtual Insight Series Participant, Remote, June 2024</p>
             <ul>
-                <li>Provide one-on-one and group instruction to 83 undergraduate students in pre-calculus concepts.</li>
-                <li>Create customized lesson plans and practice problems to improve student understanding.</li>
-                <li>Monitor and evaluate student progress and provide feedback to students and professors.</li>
+                <li>Selected from 10,000+ applicants for a four-week Goldman Sachs program, gaining key finance skills and insights into firm culture.</li>
+                <li>Participated in a four-week program that provided an opportunity to learn from top professionals in the investment banking world at a leading global firm, offering a rewarding experience and acquiring crucial knowledge.</li>
+            </ul>
+
+            <h4>DATA GLACIERS</h4>
+            <p>Data Science Intern, Remote, May 2023 – Aug 2023</p>
+            <ul>
+                <li>Designed a classification machine learning model in Python with Flask integration for the frontend, achieving 92% accuracy in predicting drug persistency, significantly improving the company’s ability to predict patient adherence and potentially reducing medication non-compliance by 15%.</li>
+                <li>Captained a cross-regional team of interns to design an ML model for a bank, aiming to cut operational costs by 20%.</li>
             </ul>
         </section>
 
@@ -44,7 +94,6 @@
         <div class="navigation bottom">
             <a href="projects.html" class="nav-btn">Projects</a>
         </div>
-
     </div>
 
     <script>
@@ -54,7 +103,7 @@
             const id = setInterval(frame, 10);
 
             function frame() {
-                if (pos == 350) {
+                if (pos === 350) {
                     clearInterval(id);
                 } else {
                     pos++;
